@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Книга процессов</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="links">
+        <a class="link-download link-download-editable removable"
+        download = 'Редактируемый файл.html'
+          >Загрузить с возможностью редактирования</a
+        >
+        <a class="link-download link-download-locked removable" 
+        download = 'Файл для пользователя.html'
+          >Загрузить без возможности редактирования</a
+        >
+      </div>
+      <h1 class="heading">
+        Книга процессов.
+      </h1>
+    </header>
+
+    <main class="main">
+      <aside class="aside">
+        <ol class="list level1-list">
+          <li id="1" class="level1-list__item list__item">
+              <div class="wrapper">
+                <button class="removable button button-add hidden">
+                  +
+                </button>
+                <h2
+                  class="level1-list__heading list__item_text editable active"
+                >
+                  Тематика
+                </h2>
+                <button class="button button-add-child">+</button>
+              </div>
+          </li>
+        </ol>
+      </aside>
+      <section class="section_content">
+        <button
+          class="section_content__button-edit section_content__button removable"
+        >
+          Редактировать
+        </button>
+        <div class="content" id="1_content">
+        <h3 class="content__heading" id='1_heading'>Тематика</h3>
+          Текст
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
